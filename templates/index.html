@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FG_Money Glitch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            <li><a href="https://www.webshare.io/?referral_code=je4m1m2hbz3i">Purchase cheap proxies</a></li>
+            <li><a href="{{ url_for('terms') }}">Terms and conditions</a></li>
+        </ul>
+    </nav>
+    <p>Welcome to</p>
+    <h1>FG_Money Glitch</h1>
+    <div class="dropdown">
+        <button class="dropbtn">
+            Basic settings <span class="chevron">▼</span>
+        </button>
+        <div class="dropdown-content">
+            <label for="input2">Threads *:
+                <span class="info-icon"
+                    title="Enter how many threads to use more the threads more the earnings(also using more threads may cause lag in system)">ℹ️</span>
+            </label>
+            <input type="text" id="threads" placeholder="10">
+            <label for="headless">
+                <input type="checkbox" id="headless1" checked="checked"> Headless mode
+                <span class="info-icon" title="If you want to run automation in backgorund[hidden]">ℹ️</span>
+            </label>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">
+            Advanced Settings <span class="chevron">▼</span>
+        </button>
+        <div class="dropdown-content">
+            <label for="ouo_links">OUO links txt *:
+                <span class="info-icon" title="Enter path to the text file that contains ouo links [each link per line]">ℹ️</span>
+            </label>
+            <input type="text" id="ouo_links" placeholder="c:/path/to/ouo.txt">
+            <label for="random_links">Random links txt *:
+                <span class="info-icon" title="Enter path to the text file that contains random links [each link per line]">ℹ️</span>
+            </label>
+            <input type="text" id="random_links" placeholder="c:/path/to/random_links.txt">
+            <label for="random_sleep">Random sleep:
+                <span class="info-icon" title="Random sleep for evading detection [Plz dont edit anything if you dont know what you are doing]">ℹ️</span>
+            </label>
+            <input type="text" id="random_sleep" placeholder="6,10">
+    
+            <label for="sleep_before_quit">sleep before quit:
+                <span class="info-icon" title="sleep time before quit to make browsers rest a little to goto next page [Plz dont edit anything if you dont know what you are doing]">ℹ️</span>
+            </label>
+            <input type="text" id="sleep_before_quit" placeholder="3,5">
+            <label for="cleanup">
+                <input type="checkbox" id="cleanup"> cleanup:
+                <span class="info-icon" title="cleanup all cache and unwanted files this will take some time before starting the work[optional but effective for more threads]">ℹ️</span>
+            </label>
+        </div>
+    </div>
+    
+
+    <div class="dropdown">
+        <button class="dropbtn">
+            Proxy Settings <span class="chevron">▼</span>
+        </button>
+        <div class="dropdown-content">
+            <label for="input2-1">Proxy Host *:
+                <span class="info-icon" title="">ℹ️</span>
+            </label>
+            <input type="text" id="proxy_host" placeholder="p.webshare.io">
+            <label for="input2-1">Proxy port *:
+                <span class="info-icon" title="">ℹ️</span>
+            </label>
+            <input type="text" id="proxy_port" placeholder="80">
+            <label for="input2-1">Proxy username *:
+                <span class="info-icon" title="">ℹ️</span>
+            </label>
+            <input type="text" id="proxy_username" placeholder="furjack-rotate">
+            <label for="input2-1">Proxy password *:
+                <span class="info-icon" title="">ℹ️</span>
+            </label>
+            <input type="password" id="proxy_password" placeholder="supersecretpassword">
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">
+            Extensions <span class="chevron">▼</span>
+        </button>
+        <div class="dropdown-content">
+            <label for="headless">
+                <input type="checkbox" id="ublock" checked="checked" disabled> Ublock origin
+                <span class="info-icon"
+                    title="blocks ads and does all work of a blocking from virus and adware">ℹ️</span>
+            </label>
+            <label for="headless">
+                <input type="checkbox" id="coming"> Add your own Extensions
+                <span class="info-icon" title="Coming soon">ℹ️</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">
+            Coming soon <span class="chevron">▼</span>
+        </button>
+        <div class="dropdown-content">
+            
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">
+            Coming soon <span class="chevron">▼</span>
+        </button>
+        <div class="dropdown-content">
+            
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="start-stop-btn" id="start-btn" onclick="startProcess()">Start</button>
+        <button class="start-stop-btn" id="stop-btn" onclick="stopProcess()">Stop</button>
+    </div>      
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <!-- <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script> -->
+    <h2 id="details"></h2>
+</body>
+
+</html>

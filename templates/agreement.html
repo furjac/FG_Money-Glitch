@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agreement - FG_Money Glitch</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #e9ecef;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #343a40;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #6c757d;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Disclaimer</h2>
+    <p>The developer is not responsible for any illegal or wrong actions you take using this software.</p>
+    <div class="checkbox-container">
+        <input type="checkbox" id="agreeCheckbox">
+        <label for="agreeCheckbox">I Agree</label>
+    </div>
+    <button id="proceedButton" disabled>Proceed</button>
+</div>
+
+<script>
+    document.getElementById('agreeCheckbox').addEventListener('change', function () {
+        document.getElementById('proceedButton').disabled = !this.checked;
+    });
+
+    document.getElementById('proceedButton').addEventListener('click', function () {
+        // Use a fetch call to update the session on the server
+        fetch('/agree')
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = '/'; // Redirect to the main page
+                }
+            });
+    });
+</script>
+
+</body>
+</html>

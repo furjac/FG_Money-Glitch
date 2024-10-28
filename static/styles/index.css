@@ -1,0 +1,199 @@
+p {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 0px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+h1 {
+    margin-top: 8px;
+    text-align: center;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    margin-top: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.dropbtn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.chevron {
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.dropdown-content label {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+    margin: 8px 0 4px;
+}
+
+.dropdown-content input[type="checkbox"] {
+    margin-right: 5px; /* Add space between checkbox and label text */
+}
+
+
+.show {
+    display: block;
+}
+
+.expanded .chevron {
+    transform: rotate(180deg);
+}
+
+.about-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about-section p {
+    margin: 5px 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.start-stop-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.start-stop-btn:hover {
+    background-color: #0056b3;
+}
+.info-icon {
+    cursor: pointer;
+    margin-left: 5px;
+    position: relative;
+    font-size: 16px; /* Adjust size as needed */
+}
+
+.info-icon:hover::after {
+    content: attr(title);
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    top: 20px; /* Position below the icon */
+    left: 0;
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 12px; /* Adjust size as needed */
+}
+
+.navbar {
+    background-color: #007BFF; /* Change to your desired color */
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the items */
+}
+
+.navbar li {
+    margin: 0 15px; /* Space between items */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.file-upload-btn {
+    display: inline-block;
+}
+
+.file-upload-btn button {
+    background-color: #007BFF; /* Change to your desired color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.file-upload-btn button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.file-upload-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+#details {
+    text-align: center; /* Center the text */
+    font-size: 3em;    /* Make the text large */
+    margin: 20px 0;    /* Add some space above and below */
+}
