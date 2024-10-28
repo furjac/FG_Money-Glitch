@@ -13,6 +13,7 @@ from shortener.__version__ import __version__
 from shortener import version_check
 import tkinter as tk
 from tkinter import messagebox
+import webbrowser
 
 if __version__ != version_check.version_check():
     root = tk.Tk()
@@ -223,6 +224,7 @@ def ouoWorkers(thread, headless, num1, num2, bnum1, bnum2,r_links,ouo_links):
     run_thread.start()
 
 if __name__ == '__main__':
+    webbrowser.open('http://127.0.0.1:5000')
     app.run(debug=True)
 
 #TODO: activation, terms and conditions,browse file.txt fix,secure software, using nuitka, check_network,
