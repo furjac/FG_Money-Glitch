@@ -1,3 +1,15 @@
+<p align="center">
+<img alt="ViewCount" src="https://views.whatilearened.today/views/github/furjac/FG_Money-Glitch.svg">
+<img alt="OS" src="https://img.shields.io/badge/OS-Windows%20/%20Linux / Mac-success">
+<a href="https://github.com/furjac/FG_Money-Glitch/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/furjac/FG_Money-Glitch/total?label=Downloads&color=success"></a>
+<a href="https://github.com/furjac/FG_Money-Glitch/issues?q=is%3Aissue+is%3Aclosed"><img alt="Closed issues" src="https://img.shields.io/github/issues-closed/furjac/FG_Money-Glitch.svg"></a>
+<a href="https://github.com/furjac/FG_Money-Glitch/issues?q=is%3Aissue+is%3Aopen"><img alt="Open issues" src="https://img.shields.io/github/issues/furjac/FG_Money-Glitch"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/furjac/FG_Money-Glitch/releases/latest"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/furjac/FG_Money-Glitch?color=success"></a>
+  <a href="https://github.com/furjac/FG_Money-Glitch/releases/latest"><img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/furjac/FG_Money-Glitch?color=success"></a>
+</p>
+
 # FG_Money-Glitch
 Automating all link shorteners with literally 0 detection mechanism with the use of selenium and some own scripts and AI to bypass captchas
 
