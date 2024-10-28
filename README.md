@@ -12,6 +12,7 @@ Automating all link shorteners with literally 0 detection mechanism with the use
    Consider a donation to keep this project alive and for the countless hours of works and testing :)
   
   **Bitcoin :** `14GSZ1293s65JjytCjZMz3AFNSUa4ZVN2V`
+  
   **XMR :** `42GyVekn3tufQjYQS9iN79g9MhzfLDgiu3HVAifDfNuW8MA2bi2UPagXo5ZPzA8rupERybjWsMv5HP7azinFbBxcFf9FW86`
 
 # Topics
