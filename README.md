@@ -27,6 +27,8 @@ Automating all link shorteners with literally 0 detection mechanism with the use
   
   **XMR :** `42GyVekn3tufQjYQS9iN79g9MhzfLDgiu3HVAifDfNuW8MA2bi2UPagXo5ZPzA8rupERybjWsMv5HP7azinFbBxcFf9FW86`
 
+  **UPI :** `furjack@ybl`
+
 # Topics
 [Requirements](https://github.com/furjac/FG_Money-Glitch#requirements)  
 [New Update](https://github.com/furjac/FG_Money-Glitch#new-update)  
