@@ -142,5 +142,7 @@ Automating all link shorteners with literally 0 detection mechanism with the use
   To get the most out of this script you should maintain these things.
   * In a nutshell, you need Rotating proxies to get the best result.
   Nothing else
+  * make sure you dont add too many threads or its gonna not load and quit itself if anyone can fix do a pull request
+  * if you can change some things in fake_useragent module for the best result
 
   Thanks and plz donate to keep this project up and running
