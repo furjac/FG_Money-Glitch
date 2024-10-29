@@ -37,10 +37,11 @@ function startProcess() {
     const ouoLinks = document.getElementById('ouo_links').value;
     const randomLinks = document.getElementById('random_links').value;
     const cleanUp = document.getElementById('cleanup').checked;
+    const apiKey = document.getElementById('wit_api_key').value;
+    const ouo = document.getElementById('ouo').checked;
+    const shrinkme = document.getElementById('shrinkme').checked;
 
-    console.log(cleanUp);
-
-    if (!ouoLinks || !randomLinks || !threads || !proxyHost || !proxyPort || !proxyPassword || !proxyUsername) {
+    if (!apiKey || !ouoLinks || !randomLinks || !threads || !proxyHost || !proxyPort || !proxyPassword || !proxyUsername || !ouo && !shrinkme) {
         alert("Please fill in all required fields: that has *");
         return; // Stop the function if validation fails
     }
@@ -65,7 +66,10 @@ function startProcess() {
         proxyPassword,
         ouoLinks,
         randomLinks,
-        cleanUp
+        cleanUp,
+        apiKey,
+        ouo,
+        shrinkme
     };
     
     // Sending the data to Flask
@@ -86,9 +90,12 @@ function startProcess() {
     localStorage.setItem('proxyPort', proxyPort);
     localStorage.setItem('proxyUsername', proxyUsername);
     localStorage.setItem('proxyPassword', proxyPassword);
-    localStorage.setItem('ouoLinks',ouoLinks)
-    localStorage.setItem('randomLinks',randomLinks)
-    localStorage.setItem('cleanUp',cleanUp)
+    localStorage.setItem('ouoLinks',ouoLinks);
+    localStorage.setItem('randomLinks',randomLinks);
+    localStorage.setItem('cleanUp',cleanUp);
+    localStorage.setItem('apiKey',apiKey);
+    localStorage.setItem('ouo',ouo);
+    localStorage.setItem('shrinkme',shrinkme);
     document.getElementById('start-btn').setAttribute("disabled","disabled");
 }
 
@@ -106,6 +113,9 @@ document.getElementById('proxy_password').value = localStorage.getItem('proxyPas
 document.getElementById('ouo_links').value = localStorage.getItem('ouoLinks') || '';
 document.getElementById('random_links').value = localStorage.getItem('randomLinks') || '';
 document.getElementById('cleanup').checked = localStorage.getItem('cleanUp') || '';
+document.getElementById('wit_api_key').value = localStorage.getItem('apiKey') || '';
+document.getElementById('ouo').checked = localStorage.getItem('ouo') || '';
+document.getElementById('shrinkme').checked = localStorage.getItem('shrinkme') || '';
 }
 
 // Load values when the page is loaded

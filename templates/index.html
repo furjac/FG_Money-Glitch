@@ -24,12 +24,12 @@
             Basic settings <span class="chevron">▼</span>
         </button>
         <div class="dropdown-content">
-            <label for="input2">Threads *:
+            <label for="threads">Threads *:
                 <span class="info-icon"
                     title="Enter how many threads to use more the threads more the earnings(also using more threads may cause lag in system)">ℹ️</span>
             </label>
             <input type="text" id="threads" placeholder="10">
-            <label for="headless">
+            <label for="headless1">
                 <input type="checkbox" id="headless1" checked="checked"> Headless mode
                 <span class="info-icon" title="If you want to run automation in backgorund[hidden]">ℹ️</span>
             </label>
@@ -61,6 +61,11 @@
                 <input type="checkbox" id="cleanup"> cleanup:
                 <span class="info-icon" title="cleanup all cache and unwanted files this will take some time before starting the work[optional but effective for more threads]">ℹ️</span>
             </label>
+
+            <label for="wit_api_key">WIT API KEY *:
+                <span class="info-icon" title="this is for all link shortener with google recaptcha">ℹ️</span>
+            </label>
+            <input type="text" id="wit_api_key" placeholder="WIT_SERVER_API">
         </div>
     </div>
     
@@ -70,19 +75,19 @@
             Proxy Settings <span class="chevron">▼</span>
         </button>
         <div class="dropdown-content">
-            <label for="input2-1">Proxy Host *:
+            <label for="proxy_host">Proxy Host *:
                 <span class="info-icon" title="">ℹ️</span>
             </label>
             <input type="text" id="proxy_host" placeholder="p.webshare.io">
-            <label for="input2-1">Proxy port *:
+            <label for="proxy_port">Proxy port *:
                 <span class="info-icon" title="">ℹ️</span>
             </label>
             <input type="text" id="proxy_port" placeholder="80">
-            <label for="input2-1">Proxy username *:
+            <label for="proxy_username">Proxy username *:
                 <span class="info-icon" title="">ℹ️</span>
             </label>
             <input type="text" id="proxy_username" placeholder="furjack-rotate">
-            <label for="input2-1">Proxy password *:
+            <label for="proxy_password">Proxy password *:
                 <span class="info-icon" title="">ℹ️</span>
             </label>
             <input type="password" id="proxy_password" placeholder="supersecretpassword">
@@ -94,12 +99,12 @@
             Extensions <span class="chevron">▼</span>
         </button>
         <div class="dropdown-content">
-            <label for="headless">
+            <label for="ublock">
                 <input type="checkbox" id="ublock" checked="checked" disabled> Ublock origin
                 <span class="info-icon"
                     title="blocks ads and does all work of a blocking from virus and adware">ℹ️</span>
             </label>
-            <label for="headless">
+            <label for="coming">
                 <input type="checkbox" id="coming"> Add your own Extensions
                 <span class="info-icon" title="Coming soon">ℹ️</span>
             </label>
@@ -107,13 +112,22 @@
     </div>
 
     <div class="dropdown">
-        <button class="dropbtn">
-            Coming soon <span class="chevron">▼</span>
-        </button>
-        <div class="dropdown-content">
-            
-        </div>
+    <button class="dropbtn">
+        Services <span class="chevron">▼</span>
+    </button>
+    <div class="dropdown-content">
+        <label>
+            <input type="radio" id="ouo" name="service" value="service1"> ouo.io
+        </label><br>
+        <label>
+            <input type="radio" id="shrinkme" name="service" value="service2"> shrinkme.io
+        </label><br>
+        <label>
+            <input type="radio" name="service" value="comingSoon" disabled> More coming soon
+        </label>
     </div>
+</div>
+
 
     <div class="dropdown">
         <button class="dropbtn">
