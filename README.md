@@ -13,6 +13,11 @@
 # FG_Money-Glitch
 Automating all link shorteners with literally 0 detection mechanism with the use of selenium and some own scripts and AI to bypass captchas
 
+# Supported link shortener services
+- ouo.io
+- shrinkme.io
+- more coming soon
+
 # NOTICE
 **For now i developed it only for ouo will soon develop for other link shortener services**
 
